@@ -1,0 +1,42 @@
+{
+  "root": true,
+  "env": {
+    "browser": true,
+    "es6": false
+  },
+  "extends": [
+    "eslint:recommended",
+    "airbnb-base",
+    "plugin:compat/recommended",
+    "plugin:prettier/recommended" // eslint-plugin-prettier + eslint-config-prettier
+  ],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaVersion": 5,
+    "sourceType": "script"
+  },
+  "rules": {
+    "func-names": "off",
+    "lines-between-class-members": [
+      "error",
+      "always",
+      { "exceptAfterSingleLine": true }
+    ],
+    "no-console": "off",
+    "no-param-reassign": "off",
+    "no-redeclare": "off",
+    "no-restricted-globals": "off",
+    "no-restricted-syntax": "off",
+    "no-shadow": "off",
+    "no-undef": "off",
+    "no-underscore-dangle": "off",
+    "no-unused-expressions": [
+      "error",
+      { "allowShortCircuit": true, "allowTernary": true }
+    ],
+    "no-use-before-define": ["error", { "functions": false }],
+    "no-var": "off",
+    "object-shorthand": "off",
+    "vars-on-top": "off"
+  }
+}

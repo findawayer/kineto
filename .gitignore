@@ -1,0 +1,12 @@
+# Protect GitHub Arctic Code Vault
+node_modules
+
+# Logs
+*.log
+
+# OS cookies
+.DS_Store
+Thumbs.db
+
+# Private notes
+.idea

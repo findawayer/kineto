@@ -1,0 +1,99 @@
+{
+  "name": "kineto",
+  "version": "0.1.0",
+  "description": "Smart and versatile JavaScript carousel plugin.",
+  "main": "src/index.ts",
+  "scripts": {
+    "lint": "eslint --fix --ext .ts .",
+    "format": "prettier --write .",
+    "dev": "node ./scripts/serve.js",
+    "build": "webpack --config ./scripts/webpack.prod.js --progress"
+  },
+  "files": [
+    "dist/kineto.js",
+    "dist/kineto.css"
+  ],
+  "keywords": [
+    "ui",
+    "carousel",
+    "gallery",
+    "slider",
+    "slideshow",
+    "accessibility",
+    "a11y",
+    "customize",
+    "javascript",
+    "typescript"
+  ],
+  "author": "Tae Sung Lim <findawayer@gmail.com>",
+  "license": "MIT",
+  "repository": "https://github.com/findawayer/kineto.git",
+  "bugs": {
+    "url": "https://github.com/findawayer/kineto/issues"
+  },
+  "config": {
+    "port": 3000
+  },
+  "devDependencies": {
+    "@babel/core": "^7.11.1",
+    "@babel/preset-env": "^7.11.0",
+    "@babel/preset-typescript": "^7.10.4",
+    "@typescript-eslint/eslint-plugin": "^4.1.1",
+    "@typescript-eslint/parser": "^4.1.1",
+    "autoprefixer": "^9.8.6",
+    "babel-loader": "^8.1.0",
+    "css-loader": "^4.2.1",
+    "eslint": "7.2.0",
+    "eslint-config-airbnb-base": "14.2.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-compat": "^3.8.0",
+    "eslint-plugin-import": "2.21.2",
+    "eslint-plugin-prettier": "^3.1.4",
+    "filemanager-webpack-plugin": "^3.0.0-alpha.4",
+    "ip": "^1.1.5",
+    "mini-css-extract-plugin": "^0.10.0",
+    "postcss-loader": "^3.0.0",
+    "prettier": "^2.0.5",
+    "sass": "^1.26.10",
+    "sass-loader": "^9.0.3",
+    "style-loader": "^1.2.1",
+    "terser-webpack-plugin": "^4.1.0",
+    "ts-loader": "^8.0.4",
+    "typescript": "^4.0.2",
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0",
+    "webpack-merge": "^5.1.4"
+  },
+  "dependencies": {
+    "@types/lodash.debounce": "^4.0.6",
+    "bezier-easing": "^2.1.0",
+    "lodash.debounce": "^4.0.8"
+  },
+  "browserslist": [
+    ">0.1%",
+    "ie 9",
+    "Android >= 7",
+    "IOS >= 11"
+  ],
+  "babel": {
+    "presets": [
+      [
+        "@babel/preset-env",
+        {
+          "useBuiltIns": "usage",
+          "corejs": 3
+        },
+        "@babel/preset-typescript"
+      ]
+    ],
+    "ignore": [
+      "dist/*.js"
+    ]
+  },
+  "postcss": {
+    "plugins": {
+      "autoprefixer": {}
+    }
+  }
+}

@@ -1,0 +1,92 @@
+// Class naming (ref: /src/core/options/classNames.js)
+
+@function join-stack($args: null, $delim: '-', $prefix: false) {
+  $ret: '';
+
+  @if $args {
+    @if type-of($args) == 'list' {
+      @each $token in $args {
+        $ret: $ret + $delim + $token;
+      }
+    } @else {
+      $ret: $ret + $delim + $args;
+    }
+  }
+
+  @return $ret;
+}
+
+@function BEM($el: null, $mod: null) {
+  $ret: $class-prefix + join-stack($el, '__');
+
+  @if $mod {
+    $ret: $ret + join-stack($mod, '--');
+  }
+
+  @return '.' + $ret;
+}
+
+@function join-each($el: null, $mod: null, $delim: '-') {
+  $ret: '';
+
+  @if $el {
+    $ret: '.' + $class-prefix + join-stack($el, $delim);
+  }
+  @if $mod {
+    $ret: $ret + '.' + $class-prefix + join-stack($mod, $delim);
+  }
+
+  @return $ret;
+}
+
+@function kebabcase($el: null, $mod: null) {
+  @return join-each($el, $mod, '-');
+}
+
+@mixin selector($element: null, $modifier: null, $nest: null) {
+  @if $element or $modifier {
+    $BEM: BEM($element, $modifier);
+    $kebabcase: kebabcase($element, $modifier);
+
+    @if $nest {
+      $BEM: selector-nest($BEM, BEM($nest));
+      $kebabcase: selector-nest($kebabcase, kebabcase($nest));
+    }
+
+    #{$BEM},
+    #{$kebabcase} {
+      @content;
+    }
+  } @else {
+    .#{$class-prefix} {
+      @content;
+    }
+  }
+}
+
+// Utilities ----------------------------------------
+
+@mixin nonvisual {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+}
+
+@mixin restrain-inline-block {
+  line-height: 0.001px;
+  font-size: 0.001px;
+}
+
+@mixin button {
+  display: inline-block;
+  padding: 0;
+  color: inherit;
+  background: transparent none;
+  border: 0 none;
+  appearance: none;
+  touch-action: manipulation;
+}

@@ -1,0 +1,30 @@
+// arrow holder
+@include selector($element: 'arrow') {
+  @include restrain-inline-block;
+  text-align: center;
+}
+
+// arrow buttons
+@include selector($element: ('arrow', 'button')) {
+  @include button;
+  position: relative;
+  padding: ceil(($arrow-clickzone - 1) * $arrow-size / 2);
+  box-sizing: content-box;
+  z-index: 1;
+  font-size: 1rem;
+}
+
+// arrow buttons: when disabled
+@include selector($element: ('arrow', 'button'), $modifier: 'disabled') {
+  opacity: $disabled-alpha;
+  cursor: not-allowed;
+  touch-action: none;
+}
+
+// arrow icons
+@include selector($element: ('arrow', 'icon')) {
+  width: $arrow-size;
+  height: $arrow-size;
+  vertical-align: middle;
+  pointer-events: none;
+}

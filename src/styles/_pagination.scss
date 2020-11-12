@@ -1,0 +1,33 @@
+// pagination
+@include selector($element: 'pagination') {
+  @include restrain-inline-block;
+  text-align: center;
+}
+
+// pagination buttons
+@include selector($element: ('pagination', 'button')) {
+  @include button;
+  position: relative;
+  width: $dot-size;
+  height: $dot-size;
+  padding: ceil(($dot-clickzone - 1) * $dot-size / 2);
+  margin: 0 $dot-spacing;
+  box-sizing: content-box;
+  z-index: 1;
+  background: currentColor;
+  background-clip: content-box;
+  opacity: $inactive-alpha;
+  font-size: 1rem;
+  line-height: 1.5em;
+}
+
+// pagination buttons: when active
+@include selector($element: ('pagination', 'button'), $modifier: 'active') {
+  opacity: 1;
+  pointer-events: none;
+}
+
+// text inside pagination buttons
+@include selector($element: ('pagination', 'button', 'text')) {
+  @include nonvisual;
+}

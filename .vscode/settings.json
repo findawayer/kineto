@@ -1,0 +1,11 @@
+{
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "[javascript]": {
+    "editor.formatOnSave": false,
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": true
+    }
+  },
+  "javascript.updateImportsOnFileMove.enabled": "prompt"
+}

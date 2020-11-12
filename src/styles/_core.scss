@@ -1,0 +1,27 @@
+// slide holder
+@include selector($element: 'scope') {
+  user-select: none;
+  -webkit-tap-highlight-color: tranparent;
+  -webkit-touch-callout: none;
+
+  &:hover {
+    cursor: move;
+    cursor: -webkit-grab;
+    cursor: grab;
+  }
+}
+
+// slide holder: while swiping
+@include selector($modifier: 'swiping') {
+  @include selector($modifier: 'scope') {
+    &:hover {
+      cursor: -webkit-grabbing;
+      cursor: grabbing;
+    }
+  }
+}
+
+// slides
+@include selector($element: 'slide') {
+  overflow: hidden;
+}

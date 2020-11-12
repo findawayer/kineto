@@ -1,0 +1,2247 @@
+<!DOCTYPE html>
+<html lang="en" prefix="og: http://ogp.me/ns#">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="./assets/favicons/favicon.ico" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="title" content="Kineto" />
+    <meta
+      name="description"
+      content="Smart and versatile JavaScript carousel plugin."
+    />
+    <link rel="canonical" href="https://findawayer.github.io/kineto/" />
+    <meta property="og:site_name" content="Kineto" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Kineto" />
+    <meta
+      property="og:description"
+      content="Smart and versatile JavaScript carousel plugin."
+    />
+    <meta property="og:url" content="https://findawayer.github.io/kineto/" />
+    <link rel="manifest" href="./assets/manifest.json" />
+    <title>Kineto</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&display=swap"
+    />
+    <link rel="stylesheet" href="./assets/kineto/kineto.css" />
+    <link rel="stylesheet" href="./assets/skeletabs/skeletabs.css" />
+    <link rel="stylesheet" href="./assets/style.css" />
+    <script src="./assets/highlight/highlight.pack.js"></script>
+    <script>
+      hljs.initHighlightingOnLoad();
+    </script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-pad">
+        <h1 class="header-title">Kineto</h1>
+        <ul class="header-menu">
+          <li class="header-menu-item">
+            <a
+              rel="external"
+              href="https://github.com/findawayer/kineto"
+              class="button mui-button mui-icon-button"
+              title="View on GitHub"
+              aria-label="View on GitHub"
+            >
+              <svg
+                class="mui-icon mui-icon-sm"
+                focusable="false"
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+              >
+                <path
+                  d="M12 .3a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2c-3.3.7-4-1.6-4-1.6-.6-1.4-1.4-1.8-1.4-1.8-1-.7.1-.7.1-.7 1.2 0 1.9 1.2 1.9 1.2 1 1.8 2.8 1.3 3.5 1 0-.8.4-1.3.7-1.6-2.7-.3-5.5-1.3-5.5-6 0-1.2.5-2.3 1.3-3.1-.2-.4-.6-1.6 0-3.2 0 0 1-.3 3.4 1.2a11.5 11.5 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.6 1.6.2 2.8 0 3.2.9.8 1.3 1.9 1.3 3.2 0 4.6-2.8 5.6-5.5 5.9.5.4.9 1 .9 2.2v3.3c0 .3.1.7.8.6A12 12 0 0 0 12 .3"
+                ></path>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <div id="page" class="page">
+      <div class="sidebar">
+        <div class="sidebar-pad">
+          <nav id="nav" class="nav">
+            <ul class="nav-group">
+              <li class="nav-item">
+                <a class="nav-link" href="#Introduction"
+                  ><span class="hover-underline">About Kineto</span></a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#Get-started"
+                  ><span class="hover-underline">Get started</span></a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#Demo"
+                  ><span class="hover-underline">Demo</span></a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#Options"
+                  ><span class="hover-underline">Options</span></a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#ClassNames"
+                  ><span class="hover-underline">ClassNames</span></a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#Methods"
+                  ><span class="hover-underline">Methods</span></a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#Events"
+                  ><span class="hover-underline">Events</span></a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#FAQ"
+                  ><span class="hover-underline">FAQ</span></a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+
+      <main id="content" class="content">
+        <div class="content-pad">
+          <div class="content-holder clearfix">
+            <section class="section" id="Introduction">
+              <h2>About Kineto</h2>
+              <p>
+                Kineto is an open source JavaScript library for building
+                carousels on websites. It aims to cover
+                <strong>every essential feature</strong> of a carousel while
+                staying <strong>simple and intuitive</strong> for integration.
+              </p>
+              <ul>
+                <li>No extra dependencies required.</li>
+                <li>Works in all major browsers and IE9+.</li>
+                <li>Control over size, spacing, direction of the slides.</li>
+                <li>Infinite loop without duplicate slides.</li>
+                <li>Add or remove slides dynamically.</li>
+                <li>Custom speed and easing of the movement.</li>
+                <li>Navigation with touch and mouse swipe.</li>
+                <li>
+                  Automatic rotation &amp; sync with other Kineto instances.
+                </li>
+                <li>And many more.</li>
+              </ul>
+              <p>
+                <a
+                  class="button button-primary button-accent"
+                  rel="external"
+                  href="https://github.com/findawayer/kineto/releases"
+                  >Get the latest release</a
+                >
+                <a
+                  class="button button-primary button-blank"
+                  rel="external"
+                  href="https://github.com/findawayer/kineto/issues"
+                  >Report issue</a
+                >
+              </p>
+            </section>
+
+            <section class="section" id="Get-started">
+              <h2>Get started</h2>
+              <p>
+                Please download the latest version of Kineto. Ready-to-use
+                resources are located in <code>/dist</code> folder.
+              </p>
+              <p>
+                <a
+                  class="button button-primary button-accent"
+                  rel="external"
+                  href="https://github.com/findawayer/kineto/releases"
+                  >Release page</a
+                >
+              </p>
+
+              <h3>Embed Kineto assets</h3>
+              <p>Insert the CSS and JS files into your HTML.</p>
+              <pre><code class="html"><!--
+  -->&lt;!DOCTYPE html>
+&lt;html>
+  &lt;head>
+    &lt;link rel="stylesheet" href="kineto.css" />
+  &lt;/head>
+  &lt;body>
+    &lt;script src="kineto.js">&lt;/script>
+  &lt;/body>
+&lt;/html></code></pre>
+              <ul>
+                <li>
+                  The CSS file contains opinionated theme for Kineto's
+                  submodules. You don't need to include it if you are going to
+                  create your own look and feel.
+                </li>
+                <li>
+                  The JS file is placed at the end of <code>body</code> element
+                  for improved performance.
+                </li>
+              </ul>
+
+              <h3>Create HTML structure</h3>
+              <p>
+                You only need to have a container holding your content slides as
+                direct children elements. <code>class</code> and accessibility
+                attributes will be automatically added once you enable Kineto.
+              </p>
+              <pre><code class="html"><!--
+  -->&lt;div>
+  &lt;div>Slide 1&lt;/div>
+  &lt;div>Slide 2&lt;/div>
+  &lt;div>Slide 3&lt;/div>
+&lt;/div></code></pre>
+
+              <h3>Initialize Kineto with JavaScript</h3>
+              <p>
+                Once
+                <a
+                  href="https://learn.jquery.com/using-jquery-core/document-ready/"
+                  rel="external noopener noreferrer"
+                  >DOM is ready</a
+                >, you can now initialize Kineto with
+                <code>Kineto.create()</code> method. Below is an example:
+              </p>
+              <pre><code class="javascript">Kineto.create('#carousel', { pagination: true });</code></pre>
+              <p>
+                Kineto is applied to all elements matching the selector
+                provided. To control only a specific instance, we recommend you
+                to use either a unique selector or an element object instead the
+                selector.
+              </p>
+            </section>
+
+            <section class="section" id="Demo">
+              <h2>Demo</h2>
+              <div class="tip">
+                Here are some example code recipes for different use cases. For
+                more details, please read
+                <a href="#Options">options</a> section.
+              </div>
+
+              <h3>Default</h3>
+              <div id="default" class="carousel">
+                <div class="slide">
+                  <span class="count">1</span>
+                </div>
+                <div class="slide">
+                  <span class="count">2</span>
+                </div>
+                <div class="slide">
+                  <span class="count">3</span>
+                </div>
+                <div class="slide">
+                  <span class="count">4</span>
+                </div>
+                <div class="slide">
+                  <span class="count">5</span>
+                </div>
+              </div>
+              <pre><code class="javascript">Kineto.create('#carousel');</code></pre>
+
+              <h3>Number of visible slides</h3>
+              <div id="perView" class="carousel">
+                <div class="slide">
+                  <span class="count">1</span>
+                </div>
+                <div class="slide">
+                  <span class="count">2</span>
+                </div>
+                <div class="slide">
+                  <span class="count">3</span>
+                </div>
+                <div class="slide">
+                  <span class="count">4</span>
+                </div>
+                <div class="slide">
+                  <span class="count">5</span>
+                </div>
+              </div>
+              <pre><code class="javascript">Kineto.create('#carousel', { perView: 2 });</code></pre>
+
+              <h3>Margin between slides</h3>
+              <div id="margin" class="carousel">
+                <div class="slide">
+                  <span class="count">1</span>
+                </div>
+                <div class="slide">
+                  <span class="count">2</span>
+                </div>
+                <div class="slide">
+                  <span class="count">3</span>
+                </div>
+                <div class="slide">
+                  <span class="count">4</span>
+                </div>
+                <div class="slide">
+                  <span class="count">5</span>
+                </div>
+              </div>
+              <pre><code class="javascript">Kineto.create('#carousel', { margin: 40 });</code></pre>
+
+              <h3>Vertical direction</h3>
+              <div id="vertical" class="carousel">
+                <div class="slide">
+                  <span class="count">1</span>
+                </div>
+                <div class="slide">
+                  <span class="count">2</span>
+                </div>
+                <div class="slide">
+                  <span class="count">3</span>
+                </div>
+                <div class="slide">
+                  <span class="count">4</span>
+                </div>
+                <div class="slide">
+                  <span class="count">5</span>
+                </div>
+              </div>
+              <pre><code class="javascript">Kineto.create('#carousel', { mode: 'vertical' });</code></pre>
+
+              <h3>Infinite loop</h3>
+              <div id="loop" class="carousel">
+                <div class="slide">
+                  <span class="count">1</span>
+                </div>
+                <div class="slide">
+                  <span class="count">2</span>
+                </div>
+                <div class="slide">
+                  <span class="count">3</span>
+                </div>
+                <div class="slide">
+                  <span class="count">4</span>
+                </div>
+                <div class="slide">
+                  <span class="count">5</span>
+                </div>
+              </div>
+              <pre><code class="javascript">Kineto.create('#carousel', { loop: true });</code></pre>
+
+              <h3>Adaptive Height</h3>
+              <div id="adaptiveHeight" class="carousel">
+                <div class="slide">
+                  <span class="count">1</span>
+                </div>
+                <div class="slide" style="height: 400px">
+                  <span class="count">2</span>
+                </div>
+                <div class="slide" style="height: 200px">
+                  <span class="count">3</span>
+                </div>
+                <div class="slide" style="height: 250px">
+                  <span class="count">4</span>
+                </div>
+                <div class="slide" style="height: 350px">
+                  <span class="count">5</span>
+                </div>
+              </div>
+              <pre><code class="javascript">Kineto.create('#carousel', { height: 'adaptive' });</code></pre>
+
+              <h3>Equal Height</h3>
+              <div id="equalHeight" class="carousel">
+                <div class="slide">
+                  <span class="count">1</span>
+                </div>
+                <div class="slide" style="height: 400px">
+                  <span class="count">2</span>
+                </div>
+                <div class="slide" style="height: 200px">
+                  <span class="count">3</span>
+                </div>
+                <div class="slide" style="height: 250px">
+                  <span class="count">4</span>
+                </div>
+                <div class="slide" style="height: 350px">
+                  <span class="count">5</span>
+                </div>
+              </div>
+              <pre><code class="javascript">Kineto.create('#carousel', { height: 'equal' });</code></pre>
+
+              <h3>Move by 2</h3>
+              <div id="moveBy" class="carousel">
+                <div class="slide">
+                  <span class="count">1</span>
+                </div>
+                <div class="slide">
+                  <span class="count">2</span>
+                </div>
+                <div class="slide">
+                  <span class="count">3</span>
+                </div>
+                <div class="slide">
+                  <span class="count">4</span>
+                </div>
+                <div class="slide">
+                  <span class="count">5</span>
+                </div>
+              </div>
+              <pre><code class="javascript">Kineto.create('#carousel', { moveBy: 2 });</code></pre>
+
+              <h3>Movement speed</h3>
+              <div id="speed" class="carousel">
+                <div class="slide">
+                  <span class="count">1</span>
+                </div>
+                <div class="slide">
+                  <span class="count">2</span>
+                </div>
+                <div class="slide">
+                  <span class="count">3</span>
+                </div>
+                <div class="slide">
+                  <span class="count">4</span>
+                </div>
+                <div class="slide">
+                  <span class="count">5</span>
+                </div>
+              </div>
+              <pre><code class="javascript">Kineto.create('#carousel', { speed: 1000 });</code></pre>
+
+              <h3>Animation easing</h3>
+              <div id="easingPreset" class="carousel">
+                <div class="slide">
+                  <span class="count">1</span>
+                </div>
+                <div class="slide">
+                  <span class="count">2</span>
+                </div>
+                <div class="slide">
+                  <span class="count">3</span>
+                </div>
+                <div class="slide">
+                  <span class="count">4</span>
+                </div>
+                <div class="slide">
+                  <span class="count">5</span>
+                </div>
+              </div>
+              <pre><code class="javascript">Kineto.create('#carousel', { easing: 'easeInOutBack' });</code></pre>
+
+              <div id="customEasing" class="carousel">
+                <div class="slide">
+                  <span class="count">1</span>
+                </div>
+                <div class="slide">
+                  <span class="count">2</span>
+                </div>
+                <div class="slide">
+                  <span class="count">3</span>
+                </div>
+                <div class="slide">
+                  <span class="count">4</span>
+                </div>
+                <div class="slide">
+                  <span class="count">5</span>
+                </div>
+              </div>
+              <pre><code class="javascript">Kineto.create('#carousel', { easing: [0.2, 2, 0.3, 0.8] });</code></pre>
+
+              <h3>Move to clicked slide</h3>
+              <div id="moveOnClick" class="carousel">
+                <div class="slide">
+                  <span class="count">1</span>
+                </div>
+                <div class="slide">
+                  <span class="count">2</span>
+                </div>
+                <div class="slide">
+                  <span class="count">3</span>
+                </div>
+                <div class="slide">
+                  <span class="count">4</span>
+                </div>
+                <div class="slide">
+                  <span class="count">5</span>
+                </div>
+              </div>
+              <pre><code class="javascript">Kineto.create('#carousel', { moveOnClick: true });</code></pre>
+
+              <h3>Auto playing</h3>
+              <div id="stream" class="carousel">
+                <div class="slide">
+                  <span class="count">1</span>
+                </div>
+                <div class="slide">
+                  <span class="count">2</span>
+                </div>
+                <div class="slide">
+                  <span class="count">3</span>
+                </div>
+                <div class="slide">
+                  <span class="count">4</span>
+                </div>
+                <div class="slide">
+                  <span class="count">5</span>
+                </div>
+              </div>
+              <pre><code class="javascript">Kineto.create('#carousel', { stream: true });</code></pre>
+
+              <h3>Navigation components</h3>
+              <div id="navigation" class="carousel">
+                <div class="slide">
+                  <span class="count">1</span>
+                </div>
+                <div class="slide">
+                  <span class="count">2</span>
+                </div>
+                <div class="slide">
+                  <span class="count">3</span>
+                </div>
+                <div class="slide">
+                  <span class="count">4</span>
+                </div>
+                <div class="slide">
+                  <span class="count">5</span>
+                </div>
+              </div>
+              <pre><code class="javascript"><!--
+-->Kineto.create('#carousel', {
+  arrows: true,
+  arrowTemplate: ['&larr;', '&rarr;'],
+  count: true,
+  countTemplate: '&lt;em class="current">{{current}}&lt;/em> / {{total}}',
+  pagination: true,
+  paginationTemplate: '{{index}}',
+});</code></pre>
+
+              <h3>Block swiping beyond edges</h3>
+              <div id="noEdgeBounce" class="carousel">
+                <div class="slide">
+                  <span class="count">1</span>
+                </div>
+                <div class="slide">
+                  <span class="count">2</span>
+                </div>
+                <div class="slide">
+                  <span class="count">3</span>
+                </div>
+                <div class="slide">
+                  <span class="count">4</span>
+                </div>
+                <div class="slide">
+                  <span class="count">5</span>
+                </div>
+              </div>
+              <pre><code class="javascript">Kineto.create('#carousel', { swipeEdgeBounce: false });</code></pre>
+
+              <h3>Mouse wheel</h3>
+              <div id="wheel" class="carousel">
+                <div class="slide">
+                  <span class="count">1</span>
+                </div>
+                <div class="slide">
+                  <span class="count">2</span>
+                </div>
+                <div class="slide">
+                  <span class="count">3</span>
+                </div>
+                <div class="slide">
+                  <span class="count">4</span>
+                </div>
+                <div class="slide">
+                  <span class="count">5</span>
+                </div>
+              </div>
+              <pre><code class="javascript">Kineto.create('#carousel', { wheel: true });</code></pre>
+
+              <p>Allow only 1 wheel per second</p>
+              <div id="wheelThrottle" class="carousel">
+                <div class="slide">
+                  <span class="count">1</span>
+                </div>
+                <div class="slide">
+                  <span class="count">2</span>
+                </div>
+                <div class="slide">
+                  <span class="count">3</span>
+                </div>
+                <div class="slide">
+                  <span class="count">4</span>
+                </div>
+                <div class="slide">
+                  <span class="count">5</span>
+                </div>
+              </div>
+              <pre><code class="javascript">Kineto.create('#carousel', { wheel: true, wheelThrottle: 1000 });</code></pre>
+
+              <p>Scroll blocked after hitting edges</p>
+              <div id="wheelNoEdges" class="carousel">
+                <div class="slide">
+                  <span class="count">1</span>
+                </div>
+                <div class="slide">
+                  <span class="count">2</span>
+                </div>
+                <div class="slide">
+                  <span class="count">3</span>
+                </div>
+                <div class="slide">
+                  <span class="count">4</span>
+                </div>
+                <div class="slide">
+                  <span class="count">5</span>
+                </div>
+              </div>
+              <pre><code class="javascript">Kineto.create('#carousel', { wheelEdgeRelease: false, mode: 'vertical' });</code></pre>
+
+              <h3>Use percentage values in CSS</h3>
+              <p>
+                Setting <code>responsive</code> option make carousels reload on
+                viewport size changed. If you want them to scale with its
+                container without triggering reload,
+                <code>usePercent</code> will come in handy. (Resize your browser
+                window to observe the difference.)
+              </p>
+              <div id="usePercent" class="carousel">
+                <div class="slide">
+                  <span class="count">1</span>
+                </div>
+                <div class="slide">
+                  <span class="count">2</span>
+                </div>
+                <div class="slide">
+                  <span class="count">3</span>
+                </div>
+                <div class="slide">
+                  <span class="count">4</span>
+                </div>
+                <div class="slide">
+                  <span class="count">5</span>
+                </div>
+              </div>
+              <pre><code class="javascript">Kineto.create('#carousel', { usePercent: true, responsive: false });</code></pre>
+
+              <h3>Responsive</h3>
+              <div id="responsive" class="carousel">
+                <div class="slide">
+                  <span class="count">1</span>
+                </div>
+                <div class="slide">
+                  <span class="count">2</span>
+                </div>
+                <div class="slide">
+                  <span class="count">3</span>
+                </div>
+                <div class="slide">
+                  <span class="count">4</span>
+                </div>
+                <div class="slide">
+                  <span class="count">5</span>
+                </div>
+              </div>
+              <pre><code class="javascript"><!--
+-->Kineto.create('#carousel', {
+  // 0 ~ 599
+  perView: 1,
+  responsive: {
+    // 600 ~ 799
+    600: {
+      perView: 1.5,
+      margin: 20,
+    },
+    // 800 ~
+    800: {
+      perView: 2,
+      margin: 30,
+    },
+  }
+});</code></pre>
+              <p>
+                The <code>responsive</code> option follows mobile-first approach
+                — it is processed from the smallest resolution to the largest.
+                Using desktop-first <code>responsiveMode</code> can reverse the
+                order of processing.
+              </p>
+              <pre><code class="javascript"><!--
+-->Kineto.create('#carousel', {
+  // 801 ~
+  perView: 2,
+  responsive: {
+    // 601 ~ 800
+    800: {
+      perView: 1.5,
+      margin: 30,
+    },
+    // 0 ~ 600
+    600: {
+      perView: 1,
+      margin: 20,
+    },
+  },
+  responsiveMode: 'desktop-first'
+});</code></pre>
+
+              <h3>Sync between instances</h3>
+              <div id="sync1" class="carousel">
+                <div class="slide">
+                  <span class="count">1</span>
+                </div>
+                <div class="slide">
+                  <span class="count">2</span>
+                </div>
+                <div class="slide">
+                  <span class="count">3</span>
+                </div>
+                <div class="slide">
+                  <span class="count">4</span>
+                </div>
+                <div class="slide">
+                  <span class="count">5</span>
+                </div>
+                <div class="slide">
+                  <span class="count">6</span>
+                </div>
+                <div class="slide">
+                  <span class="count">7</span>
+                </div>
+                <div class="slide">
+                  <span class="count">8</span>
+                </div>
+                <div class="slide">
+                  <span class="count">9</span>
+                </div>
+              </div>
+              <div id="sync2" class="carousel">
+                <div class="slide">
+                  <span class="count">1</span>
+                </div>
+                <div class="slide">
+                  <span class="count">2</span>
+                </div>
+                <div class="slide">
+                  <span class="count">3</span>
+                </div>
+                <div class="slide">
+                  <span class="count">4</span>
+                </div>
+                <div class="slide">
+                  <span class="count">5</span>
+                </div>
+                <div class="slide">
+                  <span class="count">6</span>
+                </div>
+                <div class="slide">
+                  <span class="count">7</span>
+                </div>
+                <div class="slide">
+                  <span class="count">8</span>
+                </div>
+                <div class="slide">
+                  <span class="count">9</span>
+                </div>
+              </div>
+              <div id="sync3" class="carousel">
+                <div class="slide">
+                  <span class="count">1</span>
+                </div>
+                <div class="slide">
+                  <span class="count">2</span>
+                </div>
+                <div class="slide">
+                  <span class="count">3</span>
+                </div>
+                <div class="slide">
+                  <span class="count">4</span>
+                </div>
+                <div class="slide">
+                  <span class="count">5</span>
+                </div>
+                <div class="slide">
+                  <span class="count">6</span>
+                </div>
+                <div class="slide">
+                  <span class="count">7</span>
+                </div>
+                <div class="slide">
+                  <span class="count">8</span>
+                </div>
+                <div class="slide">
+                  <span class="count">9</span>
+                </div>
+              </div>
+              <pre><code class="javascript"><!--
+-->// Assign same `syncId` to carousels to get in sync.
+Kineto.create('#carousel1', {
+  syncId: 'gallery',
+  loop: true,
+  stream: true,
+});
+
+Kineto.create('#carousel2', {
+  syncId: 'gallery',
+  perView: 3,
+  loop: true,
+  pagination: false,
+});
+
+Kineto.create('#carousel3', {
+  syncId: 'gallery',
+  perView: 5,
+  align: 'justify',
+  arrows: false,
+  pagination: false,
+});</code></pre>
+            </section>
+
+            <section class="section" id="Options">
+              <h2>Options</h2>
+              <p>
+                <code>Kineto.create</code> method takes 2 parameters — you can
+                configure Kineto by passing an object containing desired
+                options.
+              </p>
+              <pre><code class="javascript">Kineto.create(container, options);</code></pre>
+
+              <p>Here's the summarized version of default options.</p>
+              <pre><code class="javascript"><!--
+-->{
+  mode: 'horizontal',
+  align: 'center',
+  perView: 'auto',
+  height: 'auto',
+  margin: 10,
+  loop: false,
+  startAt: 0,
+  moveBy: 1,
+  speed: 600,
+  easing: [0, 0, 0.2, 1],
+  moveOnClick: false,
+  waitAnimation: false,
+  stream: false,
+  streamEvery: 3000,
+  streamRewind: true,
+  pauseOnFocus: true,
+  pauseOnHover: false,
+  syncId: null,
+  arrows: true,
+  arrowsInto: null,
+  arrowTemplate: null,
+  count: false,
+  countInto: null,
+  countTemplate: null,
+  pagination: true,
+  paginationInto: null,
+  paginationTemplate: null,
+  touchSwipe: true,
+  mouseSwipe: true,
+  swipeThreshold: 3,
+  swipeMultiplier: 1,
+  swipeEdgeBounce: true,
+  swipeEdgeFriction: 0.8,
+  wheel: false,
+  wheelTarget: null,
+  wheelThrottle: 'auto',
+  wheelEdgeRelease: true,
+  aria: true,
+  cssPrecision: 3,
+  usePercent: false,
+  responsive: true,
+  responsiveDelay: 100,
+  responsiveMode: 'mobile-first',
+}</code></pre>
+
+              <h3>Layout</h3>
+              <div class="table-scroller">
+                <table>
+                  <colgroup>
+                    <col style="width: 12em" />
+                    <col style="width: 9em" />
+                    <col style="width: 9em" />
+                    <col style="width: auto" />
+                  </colgroup>
+                  <thead>
+                    <tr>
+                      <th scope="col">Key</th>
+                      <th scope="col">Type</th>
+                      <th scope="col">Default</th>
+                      <th scope="col">Description</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>mode</td>
+                      <td>
+                        <code class="hljs-string">'horizontal'</code><br />
+                        <code class="hljs-string">'vertical'</code>
+                      </td>
+                      <td><code class="hljs-string">'horizontal'</code></td>
+                      <td>
+                        The direction of the content flow. (The option is named
+                        so to prepare for the addition of new modes in the
+                        future.)
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>align</td>
+                      <td>
+                        <code class="hljs-string">'center'</code><br />
+                        <code class="hljs-string">'start'</code><br />
+                        <code class="hljs-string">'end'</code><br />
+                        <code class="hljs-string">'justify'</code>
+                      </td>
+                      <td><code class="hljs-string">'center'</code></td>
+                      <td>
+                        <p>The alignment of slides.</p>
+                        <ul>
+                          <li>
+                            <code class="hljs-string">'center'</code>: Centerize
+                            the current slide, leaving empty space on both sides
+                            if necessary.
+                          </li>
+                          <li>
+                            <code class="hljs-string">'start'</code>: Align
+                            slides to the beginning point, leaving empty space
+                            after the last slide if necessary.
+                          </li>
+                          <li>
+                            <code class="hljs-string">'end'</code>: Align slides
+                            to the ending point, leaving empty space before the
+                            first slide if necessary.
+                          </li>
+                          <li>
+                            <code class="hljs-string">'justify'</code>: Align
+                            slides to both sides, leaving no empty space.
+                          </li>
+                        </ul>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>perView</td>
+                      <td>
+                        <code>number</code><br /><code class="hljs-string"
+                          >'auto'</code
+                        >
+                      </td>
+                      <td><code class="hljs-string">'auto'</code></td>
+                      <td>
+                        Number of slides to show per frame. Floats are accepted.
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>height</td>
+                      <td>
+                        <code class="hljs-string">'auto'</code><br />
+                        <code class="hljs-string">'adaptive'</code><br />
+                        <code class="hljs-string">'equal'</code>
+                      </td>
+                      <td><code class="hljs-string">'auto'</code></td>
+                      <td>
+                        <p>The way the carousel handles its height.</p>
+                        <ul>
+                          <li>
+                            <code class="hljs-string">'auto'</code>: Scale the
+                            container to fit the tallest slide's height; the
+                            height of slides do not change.
+                          </li>
+                          <li>
+                            <code class="hljs-string">'adaptive'</code>: Adjust
+                            the container's height to fit that of currently
+                            active slide.
+                          </li>
+                          <li>
+                            <code class="hljs-string">'equal'</code>: Equalize
+                            height of the slides to the tallest one.
+                          </li>
+                        </ul>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>margin</td>
+                      <td><code>number</code></td>
+                      <td><code>10</code></td>
+                      <td>Distance (in pixel) between slides.</td>
+                    </tr>
+                    <tr>
+                      <td>loop</td>
+                      <td><code>boolean</code></td>
+                      <td><code>false</code></td>
+                      <td>
+                        Wrap around to the other end on edges to allow infinite
+                        navigation.
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>startAt</td>
+                      <td><code>number</code></td>
+                      <td><code>0</code></td>
+                      <td>
+                        Zero-based index of the slide to be shown on
+                        initialization.
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <h3>Movement</h3>
+              <p>
+                Options related to movements of the carousel. They do not affect
+                swipe movements.
+              </p>
+              <div class="table-scroller">
+                <table>
+                  <colgroup>
+                    <col style="width: 12em" />
+                    <col style="width: 9em" />
+                    <col style="width: 9em" />
+                    <col style="width: auto" />
+                  </colgroup>
+                  <thead>
+                    <tr>
+                      <th scope="col">Key</th>
+                      <th scope="col">Type</th>
+                      <th scope="col">Default</th>
+                      <th scope="col">Description</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>moveBy</td>
+                      <td><code>number</code></td>
+                      <td><code>1</code></td>
+                      <td>Number of slides to pass when moving.</td>
+                    </tr>
+                    <tr>
+                      <td>speed</td>
+                      <td><code>number</code></td>
+                      <td><code>600</code></td>
+                      <td>Duration of movements.</td>
+                    </tr>
+                    <tr>
+                      <td>easing</td>
+                      <td><code>string</code><br /><code>number[]</code></td>
+                      <td>
+                        <!-- prettier-ignore-start -->
+                        <code
+                          >[<code class="hljs-number">0</code>,
+                          <code class="hljs-number">0</code>,
+                          <code class="hljs-number">0.2</code>,
+                          <code class="hljs-number">1</code>]</code
+                        >
+                        <!-- prettier-ignore-end -->
+                      </td>
+                      <td>
+                        <p>
+                          Easing curve of movements. You can enter either a
+                          CSS-like easing function name listed below, or an
+                          array of 4 besier points.
+                        </p>
+                        <ul>
+                          <li>linear</li>
+                          <li>ease</li>
+                          <li>easeIn</li>
+                          <li>easeOut</li>
+                          <li>easeInOut</li>
+                          <li>easeInSine</li>
+                          <li>easeOutSine</li>
+                          <li>easeInOutSine</li>
+                          <li>easeInQuad</li>
+                          <li>easeOutQuad</li>
+                          <li>easeInOutQuad</li>
+                          <li>easeInCubic</li>
+                          <li>easeOutCubic</li>
+                          <li>easeInOutCubic</li>
+                          <li>easeInQuart</li>
+                          <li>easeOutQuart</li>
+                          <li>easeInOutQuart</li>
+                          <li>easeInQuint</li>
+                          <li>easeOutQuint</li>
+                          <li>easeInOutQuint</li>
+                          <li>easeInExpo</li>
+                          <li>easeOutExpo</li>
+                          <li>easeInOutExpo</li>
+                          <li>easeInCirc</li>
+                          <li>easeOutCirc</li>
+                          <li>easeInOutCirc</li>
+                          <li>easeInBack</li>
+                          <li>easeOutBack</li>
+                          <li>easeInOutBack</li>
+                        </ul>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>moveOnClick</td>
+                      <td><code>boolean</code></td>
+                      <td><code>false</code></td>
+                      <td>Move to clicked slide.</td>
+                    </tr>
+                    <tr>
+                      <td>waitAnimation</td>
+                      <td><code>boolean</code></td>
+                      <td><code>false</code></td>
+                      <td>
+                        Prevent movements from being fired while an animation
+                        being played.
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <h3>Streaming</h3>
+              <div class="table-scroller">
+                <table>
+                  <colgroup>
+                    <col style="width: 12em" />
+                    <col style="width: 9em" />
+                    <col style="width: 9em" />
+                    <col style="width: auto" />
+                  </colgroup>
+                  <thead>
+                    <tr>
+                      <th scope="col">Key</th>
+                      <th scope="col">Type</th>
+                      <th scope="col">Default</th>
+                      <th scope="col">Description</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>stream</td>
+                      <td><code>boolean</code></td>
+                      <td><code>false</code></td>
+                      <td>
+                        <p>
+                          Automatically move to next slide every N milliseconds.
+                        </p>
+                        <p>Kineto will pause streaming when:</p>
+                        <ul>
+                          <li>
+                            The user tries to navigate with arrow or pagination
+                            buttons. (The stream will resume after the button
+                            loses the focus.)
+                          </li>
+                          <li>
+                            The user leaves the tab or the browser. (This
+                            feature works in browsers that supports
+                            <a
+                              href="https://developer.mozilla.org/en-US/docs/Web/API/Page_Visibility_API"
+                              rel="external noopener"
+                              >Page Visibility API</a
+                            >.)
+                          </li>
+                          <li>
+                            <code>pauseOnFocus</code> or
+                            <code>pauseOnHover</code> option is active, and the
+                            user performs relevant interaction.
+                          </li>
+                        </ul>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>streamEvery</td>
+                      <td><code>number</code></td>
+                      <td><code>3000</code></td>
+                      <td>
+                        Time gap (in milliseconds) between each stream tick.
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>streamRewind</td>
+                      <td><code>boolean</code></td>
+                      <td><code>true</code></td>
+                      <td>
+                        Redirect the stream to the first slide after hitting the
+                        last slide.
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>pauseOnFocus</td>
+                      <td><code>boolean</code></td>
+                      <td><code>true</code></td>
+                      <td>Pause the streaming while slide is focused.</td>
+                    </tr>
+                    <tr>
+                      <td>pauseOnHover</td>
+                      <td><code>boolean</code></td>
+                      <td><code>false</code></td>
+                      <td>Pause the streaming while pointer cursor is on.</td>
+                    </tr>
+                    <tr>
+                      <td>syncId</td>
+                      <td><code>string</code></td>
+                      <td><code>null</code></td>
+                      <td>
+                        <p>
+                          Synchronize other kineto instances with same
+                          <code>syncId</code>.
+                        </p>
+                        <p>
+                          Setting <code>stream: true</code> to any of those
+                          instances will enable streaming of the 1st instance,
+                          not the rest.
+                        </p>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <h3>Addons</h3>
+              <div class="table-scroller">
+                <table>
+                  <colgroup>
+                    <col style="width: 12em" />
+                    <col style="width: 9em" />
+                    <col style="width: 9em" />
+                    <col style="width: auto" />
+                  </colgroup>
+                  <thead>
+                    <tr>
+                      <th scope="col">Key</th>
+                      <th scope="col">Type</th>
+                      <th scope="col">Default</th>
+                      <th scope="col">Description</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>arrows</td>
+                      <td><code>boolean</code></td>
+                      <td><code>true</code></td>
+                      <td>Add previous &amp; next buttons.</td>
+                    </tr>
+                    <tr>
+                      <td>arrowsInto</td>
+                      <td><code>string</code><br /><code>HTMLElement</code></td>
+                      <td><code>null</code></td>
+                      <td>
+                        Specify the container element for the arrow buttons.
+                        Accepts either an element selector or a element object.
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>arrowsTemplate</td>
+                      <td><code>[string, string]</code></td>
+                      <td><code>null</code></td>
+                      <td>
+                        <p>
+                          Array of strings representing content HTML for the
+                          arrow buttons.
+                        </p>
+                        <p>
+                          e.g.
+                          <code class="hljs-attr"
+                            >[<code class="hljs-string"
+                              >&lt;span>&amp;larr;&lt;/span></code
+                            >,
+                            <code class="hljs-string"
+                              >&lt;span>&amp;rarr;&lt;/span></code
+                            >]</code
+                          >
+                        </p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>count</td>
+                      <td><code>boolean</code></td>
+                      <td><code>true</code></td>
+                      <td>Add a fraction-style pagination.</td>
+                    </tr>
+                    <tr>
+                      <td>countInto</td>
+                      <td><code>string</code></td>
+                      <td><code>null</code></td>
+                      <td>
+                        Specify the container element for the count component.
+                        Accepts either an element selector or a element object.
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>countTemplate</td>
+                      <td><code>string</code></td>
+                      <td><code>null</code></td>
+                      <td>
+                        <p>
+                          String representing content HTML for the count
+                          component.
+                        </p>
+                        <ul>
+                          <li>
+                            <code class="hljs-string">{{current}}</code> will be
+                            replaced with current page.
+                          </li>
+                          <li>
+                            <code class="hljs-string">{{total}}</code> will be
+                            replaced with number of total pages.
+                          </li>
+                        </ul>
+                        <p>
+                          e.g.
+                          <code class="hljs-string"
+                            >&lt;span>{{current}}&lt;/span> / {{total}}</code
+                          >
+                        </p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>pagination</td>
+                      <td><code>boolean</code></td>
+                      <td><code>true</code></td>
+                      <td>Add page indicator buttons.</td>
+                    </tr>
+                    <tr>
+                      <td>paginationInto</td>
+                      <td><code>string</code></td>
+                      <td><code>null</code></td>
+                      <td>
+                        Specify the container element for the pagination.
+                        Accepts either an element selector or a element object.
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>paginationTemplate</td>
+                      <td><code>string</code></td>
+                      <td><code>null</code></td>
+                      <td>
+                        <p>
+                          String representing content HTML for the count
+                          component.
+                        </p>
+                        <ul>
+                          <li>
+                            <code class="hljs-string">{{index}}</code> will be
+                            replaced each page number.
+                          </li>
+                        </ul>
+                        <p>
+                          e.g.
+                          <code class="hljs-string"
+                            >&lt;span>{{index}}&lt;/span></code
+                          >
+                        </p>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <h3>Swipe</h3>
+              <div class="table-scroller">
+                <table>
+                  <colgroup>
+                    <col style="width: 12em" />
+                    <col style="width: 9em" />
+                    <col style="width: 9em" />
+                    <col style="width: auto" />
+                  </colgroup>
+                  <thead>
+                    <tr>
+                      <th scope="col">Key</th>
+                      <th scope="col">Type</th>
+                      <th scope="col">Default</th>
+                      <th scope="col">Description</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>touchSwipe</td>
+                      <td><code>boolean</code></td>
+                      <td><code>true</code></td>
+                      <td>Allow scrolling by touch drag.</td>
+                    </tr>
+                    <tr>
+                      <td>mouseSwipe</td>
+                      <td><code>boolean</code></td>
+                      <td><code>true</code></td>
+                      <td>Allow scrolling by mouse drag.</td>
+                    </tr>
+                    <tr>
+                      <td>swipeThreshold</td>
+                      <td><code>number</code></td>
+                      <td><code>3</code></td>
+                      <td>
+                        Amount of pixels in pixel to skip before drag movement
+                        starts.
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>swipeMultiplier</td>
+                      <td><code>number</code></td>
+                      <td><code>1</code></td>
+                      <td>Amplify swipe movement by this value.</td>
+                    </tr>
+                    <tr>
+                      <td>swipeEdgeBounce</td>
+                      <td><code>boolean</code></td>
+                      <td><code>true</code></td>
+                      <td>
+                        Apply elastic rebound motion on both edges. Has no
+                        effect when <code>loop: true</code>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>swipeEdgeFriction</td>
+                      <td><code>boolean</code></td>
+                      <td><code>0.8</code></td>
+                      <td>
+                        Reduce the swipe movement beyond both edges. Any number
+                        between 0 ~ 1(inclusive) is accepted.
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <h3>Mouse wheel</h3>
+              <div class="table-scroller">
+                <table>
+                  <colgroup>
+                    <col style="width: 12em" />
+                    <col style="width: 9em" />
+                    <col style="width: 9em" />
+                    <col style="width: auto" />
+                  </colgroup>
+                  <thead>
+                    <tr>
+                      <th scope="col">Key</th>
+                      <th scope="col">Type</th>
+                      <th scope="col">Default</th>
+                      <th scope="col">Description</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>wheel</td>
+                      <td><code>boolean</code></td>
+                      <td><code>false</code></td>
+                      <td>Allow scrolling by mouse wheel.</td>
+                    </tr>
+                    <tr>
+                      <td>wheelTarget</td>
+                      <td><code>string</code></td>
+                      <td><code>null</code></td>
+                      <td>
+                        Element that receives the mouse wheel. Fallback to the
+                        element wrapper slides.
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>wheelThrottle</td>
+                      <td>
+                        <code>number</code><br /><code class="hljs-string"
+                          >'auto'</code
+                        >
+                      </td>
+                      <td><code class="hljs-string">'auto'</code></td>
+                      <td>
+                        Time (in miliseconds) during which successive scroll
+                        attempts should be ignored.
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>wheelEdgeRelease</td>
+                      <td>
+                        <code>boolean</code>
+                      </td>
+                      <td><code>true</code></td>
+                      <td>
+                        <p>
+                          Unblock scroll when the scroll reaches the last slide
+                          in the scrolling direction.
+                        </p>
+                        <p>
+                          Especially useful when the carousel's content flow is
+                          parallrel to the document's scroll direction.
+                        </p>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <h3>Miscellaneous</h3>
+              <div class="table-scroller">
+                <table>
+                  <colgroup>
+                    <col style="width: 12em" />
+                    <col style="width: 9em" />
+                    <col style="width: 9em" />
+                    <col style="width: auto" />
+                  </colgroup>
+                  <thead>
+                    <tr>
+                      <th scope="col">Key</th>
+                      <th scope="col">Type</th>
+                      <th scope="col">Default</th>
+                      <th scope="col">Description</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>aria</td>
+                      <td><code>boolean</code></td>
+                      <td><code>true</code></td>
+                      <td>Add &amp; update accessibility attributes.</td>
+                    </tr>
+                    <tr>
+                      <td>cssPrecision</td>
+                      <td><code>number</code></td>
+                      <td><code>3</code></td>
+                      <td>
+                        The precision for CSS values that include numbers.
+                        Setting it to <code class="hljs-number">0</code> may fix
+                        issues with half-pixel rendering.
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>usePercent</td>
+                      <td><code>boolean</code></td>
+                      <td><code>false</code></td>
+                      <td>
+                        <p>
+                          Use percentage for CSS values that include numbers.
+                        </p>
+                        <p>
+                          Useful if you want your carousel to scale with its
+                          container without reloading.
+                        </p>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <h3>Responsive</h3>
+              <div class="table-scroller">
+                <table>
+                  <colgroup>
+                    <col style="width: 12em" />
+                    <col style="width: 9em" />
+                    <col style="width: 9em" />
+                    <col style="width: auto" />
+                  </colgroup>
+                  <thead>
+                    <tr>
+                      <th scope="col">Key</th>
+                      <th scope="col">Type</th>
+                      <th scope="col">Default</th>
+                      <th scope="col">Description</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>responsive</td>
+                      <td><code>boolean</code><br /><code>object</code></td>
+                      <td><code>true</code></td>
+                      <td>
+                        <p>Switch kineto settings based on viewport width.</p>
+                        <p>
+                          The value has to be an object type: child keys stand
+                          for viewport range, child values kineto settings
+                          matching the range.
+                        </p>
+                        <pre><code class="javascript"><!--
+-->Kineto.create('#carousel', {
+  // 0 ~ 599
+  perView: 1,
+  responsive: {
+    // 600 ~ 799
+    600: {
+      perView: 1.5,
+      margin: 20,
+    },
+    // 800 ~
+    800: {
+      perView: 2,
+      margin: 30,
+    },
+  }
+});</code></pre>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>responsiveDelay</td>
+                      <td><code>number</code></td>
+                      <td><code>100</code></td>
+                      <td>
+                        Time delay (in milliseconds) before responding to the
+                        viewport changes.
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>responsiveMode</td>
+                      <td>
+                        <code class="hljs-string">'mobile-first'</code
+                        ><br /><code class="hljs-string">'desktop-first'</code>
+                      </td>
+                      <td><code class="hljs-string">'mobile-first'</code></td>
+                      <td>
+                        <p>
+                          The strategy used to parse
+                          <code>responsive</code> option.
+                        </p>
+                        <ul>
+                          <li>
+                            <code class="hljs-string">'mobile-first'</code>:
+                            Default resolution to
+                            <code class="hljs-number">0</code>. The resolutions
+                            passed are processed in ascending order.
+                          </li>
+                          <li>
+                            <code class="hljs-string">'desktop-first'</code>:
+                            Default resolution to
+                            <code class="hljs-number"
+                              >Number.MAX_SAFE_INTEGER</code
+                            >. The resolutions passed are processed in
+                            descending order.
+                          </li>
+                        </ul>
+                        <pre><code class="javascript"><!--
+-->Kineto.create('#carousel', {
+  // 801 ~
+  perView: 2,
+  responsive: {
+    // 601 ~ 800
+    800: {
+      perView: 1.5,
+      margin: 30,
+    },
+    // 0 ~ 600
+    600: {
+      perView: 1,
+      margin: 20,
+    },
+  },
+  responsiveMode: 'desktop-first'
+});</code></pre>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </section>
+
+            <section class="section" id="ClassNames">
+              <h2>ClassNames</h2>
+              <p>
+                The plugin dispose <code>Kineto.setClassFormat()</code> to
+                enable the customization of how CSS classes are formatted, to
+                help you stay constant in class naming throughout the project.
+              </p>
+              <p>
+                You can either provide a built-in preset name, or a custom
+                formatter created on your own.
+              </p>
+
+              <h3>kebabcase (default)</h3>
+              <p>
+                Join words with dash(-), seperating each kind of identifier for
+                higher <strong>modularity</strong>.
+              </p>
+              <ul>
+                <li>
+                  <code class="hljs-string">'kineto'</code>: The container.
+                </li>
+                <li>
+                  <code class="hljs-string">'kineto-animating'</code>:
+                  Dynamically added class to the container during animations.
+                </li>
+                <li>
+                  <code class="hljs-string">'kineto-slide'</code>: The slides
+                  inside the container.
+                </li>
+                <li>
+                  <code class="hljs-string"
+                    >'kineto-slide kineto-visible kineto-active'</code
+                  >: The currently active and visible slide.
+                </li>
+              </ul>
+              <pre><code>Kineto.setClassFormat('kebabcase');</code></pre>
+
+              <h3>BEM</h3>
+              <p>
+                Follow
+                <a href="http://getbem.com/" rel="external noopener">BEM</a>
+                strategy for class naming. BEM helps in
+                <strong>reducing specificity</strong> down to a minimum, and
+                writing codes with high <strong>readability</strong>. Here's
+                some examples how classes will look like:
+              </p>
+              <ul>
+                <li>
+                  <code class="hljs-string">'kineto'</code>: The container.
+                </li>
+                <li>
+                  <code class="hljs-string">'kineto--animating'</code>:
+                  Dynamically added class to the container during animations.
+                </li>
+                <li>
+                  <code class="hljs-string">'kineto__slide'</code>: The slides
+                  inside the container.
+                </li>
+                <li>
+                  <code class="hljs-string"
+                    >'kineto__slide--visible kineto__slide--active'</code
+                  >: The currently active and visible slide.
+                </li>
+              </ul>
+              <pre><code>Kineto.setClassFormat('BEM');</code></pre>
+
+              <h3>Custom formatter function</h3>
+              <p>
+                You can make your own formatter using the raw data passed as
+                parameters. The formatter function will receive block, element,
+                modifier according to
+                <a href="http://getbem.com/" rel="external noopener">BEM</a>
+                rules.
+              </p>
+              <ul>
+                <li>
+                  <code class="hljs-comment">@param</code> block
+                  <code>string</code>
+                </li>
+                <li>
+                  <code class="hljs-comment">@param</code> elements
+                  <code>string[]</code>
+                </li>
+                <li>
+                  <code class="hljs-comment">@param</code> modifier
+                  <code>string</code>
+                </li>
+              </ul>
+              <pre><code><!--
+-->Kineto.setClassFormat(function(block, elements, modifier) {
+  var output = capitalize(block);
+  if (elements.length) {
+    output += '_' + elements.join('_');
+  }
+  if (modifier) {
+    output += '-' + modifier;
+  }
+  return output;
+});</code></pre>
+            </section>
+
+            <section class="section" id="Methods">
+              <h2>Methods</h2>
+              <p>
+                The plugin dispose public methods in its namespace. Most of them
+                require follow next syntax:
+              </p>
+              <pre><code class="javascript">Kineto.method(container, [, arguments...]);</code></pre>
+              <ul>
+                <li>
+                  <strong>container</strong> &mdash; The selector for the
+                  container(s) to execute the command onto; a HTMLElement, a
+                  NodeList, a HTMLCollection, or an Array of HTMLElement can be
+                  used alternatively.
+                </li>
+                <li>
+                  <strong>arguments</strong> &mdash; Extra parameters to pass to
+                  the method.
+                </li>
+              </ul>
+
+              <h3>.setDefaults()</h3>
+              <p>
+                Set default options for all Kineto instance to be created after
+                this line of code. Does not require container element as
+                parameter.
+              </p>
+              <ul>
+                <li>
+                  <code class="hljs-comment">@param</code> options
+                  <code>object</code> &mdash; Subset of
+                  <a href="#Options">Kineto options</a> to use as base options.
+                </li>
+              </ul>
+              <pre><code class="javascript"><!--
+-->// Use next settings for all Kineto instances after this line.
+Kineto.setDefaults({
+  stream: true,
+  streamEvery: 4000,
+});</code></pre>
+
+              <h3>.setClassFormat()</h3>
+              <p>
+                Set CSS class formatting rules for all Kineto instance to be
+                created after this line of code.
+              </p>
+              <ul>
+                <li>
+                  <code class="hljs-comment">@param</code> format
+                  <code>string | function</code> &mdash; A class naming preset
+                  or a custom formatter function.
+                </li>
+              </ul>
+              <p>
+                Read <a href="#ClassNames">ClassNames</a> section for the
+                details.
+              </p>
+              <pre><code class="javascript"><!--
+-->// Use BEM-based classes for all Kineto instances after this line.
+Kineto.setClassFormat('BEM');</code></pre>
+
+              <h3>.create()</h3>
+              <p>
+                Instantiate Kineto on elements that match the selector passed.
+              </p>
+              <ul>
+                <li>
+                  <code class="hljs-comment">@param</code> container
+                  <code>string | HTMLElement</code> &mdash; The container
+                  element or its selector.
+                </li>
+                <li>
+                  <code class="hljs-comment">@param</code> options
+                  <code>object</code> &mdash; Kineto options. See
+                  <a href="#Options">Options</a> for details.
+                </li>
+              </ul>
+              <pre><code class="javascript"><!--
+-->// Seletor (single or multiple elements)
+Kineto.create('.carousel');
+
+// HTMLElement (single element)
+var element = document.querySelector('.carousel');
+Kineto.create(element);
+
+// NodeList (multiple elements)
+var nodelist = document.querySelectorAll('.carousel');
+Kineto.create(nodelist);
+
+// HTMLCollection (multiple elements)
+var collection = document.getElementsByClassName('.carousel');
+Kineto.create(collection);
+
+// Array of HTMLElement (multiple elements)
+var elementArray = [].slice.call(document.querySelectorAll('.carousel'));
+Kineto.create(elementArray);
+
+// Using jQuery
+var fromJquery = $('.carousel').get();
+Kineto.create(fromJquery);</code></pre>
+
+              <h3>.goTo()</h3>
+              <p>
+                Move to a specific slide that matches the index passed. Negative
+                index will count from the end.
+              </p>
+              <ul>
+                <li>
+                  <code class="hljs-comment">@param</code> container
+                  <code>string | HTMLElement</code> &mdash; The container
+                  element or its selector.
+                </li>
+                <li>
+                  <code class="hljs-comment">@param</code> index
+                  <code>number</code> &mdash; The index of the destination
+                  slide.
+                </li>
+              </ul>
+              <pre><code class="javascript"><!--
+-->// Go to the 3rd slide.
+Kineto.goTo('#carousel', 2);
+
+// Go to the last slide.
+Kineto.goTo('#carousel', -1);</code></pre>
+
+              <h3>.next()</h3>
+              <p>Go to the next slide.</p>
+              <ul>
+                <li>
+                  <code class="hljs-comment">@param</code> container
+                  <code>string | HTMLElement</code> &mdash; The container
+                  element or its selector.
+                </li>
+              </ul>
+
+              <h3>.prev()</h3>
+              <p>Go to the previous slide.</p>
+              <ul>
+                <li>
+                  <code class="hljs-comment">@param</code> container
+                  <code>string | HTMLElement</code> &mdash; The container
+                  element or its selector.
+                </li>
+              </ul>
+
+              <h3>.refresh()</h3>
+              <p>
+                Force Kineto reload and recalculate layout. This is helpful when
+                manipulating slide content that affects the layout.
+              </p>
+              <ul>
+                <li>
+                  <code class="hljs-comment">@param</code> container
+                  <code>string | HTMLElement</code> &mdash; The container
+                  element or its selector.
+                </li>
+              </ul>
+
+              <h3>.addSlide()</h3>
+              <p>
+                Add new slide(s) to an existing carousel. Negative index will
+                select from the end. If inserting position is not specified, add
+                the slide at the end.
+              </p>
+              <ul>
+                <li>
+                  <code class="hljs-comment">@param</code> container
+                  <code>string | HTMLElement</code> &mdash; The container
+                  element or its selector.
+                </li>
+                <li>
+                  <code class="hljs-comment">@param</code> contents
+                  <code>string | string[]</code> &mdash; HTML string(s)
+                  representing the content the new slide(s).
+                </li>
+                <li>
+                  <code class="hljs-comment">@param</code> position
+                  <code>number</code> &mdash; Optional. The position where the
+                  new slide(s) should be inserted at.
+                </li>
+              </ul>
+              <pre><code class="javascript"><!--
+-->// Add 1 slide at the end
+Kineto.addSlide('#carousel', 'New slide');
+
+// Add 1 slide after the 2nd slide
+Kineto.addSlide('#carousel', 'New slide', 1);
+
+// Add 2 slides at the end
+Kineto.addSlide('#carousel', ['New slide', 'Newer slide']);
+
+// Add 2 slides after the 2nd last slide
+Kineto.addSlide('#carousel', ['New slide', 'Newer slide'], -2);
+</code></pre>
+
+              <h3>.removeSlide()</h3>
+              <p>
+                Remove existing slide at a specific position. If removing
+                position is not specified, remove the last slide.
+              </p>
+              <ul>
+                <li>
+                  <code class="hljs-comment">@param</code> container
+                  <code>string | HTMLElement</code> &mdash; The container
+                  element or its selector.
+                </li>
+                <li>
+                  <code class="hljs-comment">@param</code> contents
+                  <code>string | string[]</code> &mdash; HTML string(s)
+                  representing the content the new slide(s).
+                </li>
+              </ul>
+              <pre><code class="javascript"><!--
+-->// Remove last slide
+Kineto.removeSlide('#carousel');
+
+// Remove 2nd slide
+Kineto.removeSlide('#carousel', 1);
+
+// Remove 2nd last slides
+Kineto.removeSlide('#carousel', -2);
+
+// Remove last 2 slides
+Kineto.removeSlide('#carousel', -2, 2);
+</code></pre>
+
+              <h3>.replaceSlides()</h3>
+              <p>
+                Replace existing slides with new ones. (Please note that the
+                method name is <b>plural</b>.) If replacing slides are not
+                specified, empty the carousel.
+              </p>
+              <ul>
+                <li>
+                  <code class="hljs-comment">@param</code> container
+                  <code>string | HTMLElement</code> &mdash; The container
+                  element or its selector.
+                </li>
+                <li>
+                  <code class="hljs-comment">@param</code> position
+                  <code>number</code> &mdash; Optional. The index of the slide
+                  to remove.
+                  <code class="hljs-comment">@param</code> deleteCount
+                  <code>number</code> &mdash; Optional. The number of slides to
+                  remove from <code>position</code>.
+                </li>
+              </ul>
+              <pre><code class="javascript"><!--
+-->// Remove all slides
+Kineto.replaceSlides('#carousel');
+
+// Remove all slides and insert a new slide
+Kineto.replaceSlides('#carousel', 'new');
+
+// Remove all slides and insert 2 new slides
+Kineto.replaceSlides('#carousel', ['new1', 'new2']);
+</code></pre>
+
+              <h3>.play()</h3>
+              <p>
+                Move to the next slide periodically. (The time interval between
+                each tick can be configured through
+                <code>streamEvery</code> option.)
+              </p>
+              <p>
+                After hitting the last slide, return to the first one. (You can
+                choose not to do so by setting <code>streamRewind</code> option
+                to <code>false</code>.
+              </p>
+
+              <h3>.pause()</h3>
+              <p>Stop moving to the next slide.</p>
+
+              <h3>.on()</h3>
+              <p>
+                Bind a listener to Kineto's internal event. Read
+                <a href="#Events">Events</a> for more details.
+              </p>
+              <ul>
+                <li>
+                  <code class="hljs-comment">@param</code> container
+                  <code>string | HTMLElement</code> &mdash; The container
+                  element or its selector.
+                </li>
+                <li>
+                  <code class="hljs-comment">@param</code> type
+                  <code>string</code> &mdash; The name of the event to listen
+                  to.
+                </li>
+                <li>
+                  <code class="hljs-comment">@param</code> listener
+                  <code>function</code> &mdash; The event handler to bind.
+                </li>
+              </ul>
+              <pre><code class="javascript"><!--
+-->// Do something when `#carousel` completes a movement.
+Kineto.on('#carousel', 'changed', function(currentIndex, previousIndex) {
+  // ...
+});
+</code></pre>
+
+              <h3>.off()</h3>
+              <p>
+                Unbind a listener that has been bound through
+                <code>.on()</code> method above. Read
+                <a href="#Events">Events</a> for more details. The type and the
+                listener <strong>should be identical</strong> to those used in
+                binding process.
+              </p>
+              <ul>
+                <li>
+                  <code class="hljs-comment">@param</code> container
+                  <code>string | HTMLElement</code> &mdash; The container
+                  element or its selector.
+                </li>
+                <li>
+                  <code class="hljs-comment">@param</code> type
+                  <code>string</code> &mdash; The name of the event to remove.
+                </li>
+                <li>
+                  <code class="hljs-comment">@param</code> listener
+                  <code>function</code> &mdash; The event handler to unbind.
+                </li>
+              </ul>
+              <pre><code class="javascript"><!--
+-->// Handler for gallery change
+function handleGalleryChange(currentIndex, previousIndex) { }
+
+// Bind the handler
+Kineto.on('#carousel', 'changed', handleGalleryChange);
+
+// Unbind the handler
+Kineto.off('#carousel', 'changed', handleGalleryChange);
+</code></pre>
+            </section>
+
+            <section class="section" id="Events">
+              <h2>Events</h2>
+              <p>
+                The event listeners you registered using
+                <code>Kineto.on()</code> method, are invoked every time Kineto
+                emits relevant event.
+              </p>
+              <pre><code class="javascript"><!--
+-->// Register an event listener
+Kineto.on(container, type, listener);
+
+// Unregister an event listener
+Kineto.off(container, type, listener);</code></pre>
+
+              <p>
+                Some of them receives extra information about the event occured;
+                please find the details below.
+              </p>
+
+              <h3>init</h3>
+              <p>
+                Event fired on completion of the initialization process. The
+                handler should be added before the initialization.
+              </p>
+              <pre><code class="javascript"><!--
+-->Kineto
+  .on('#carousel', 'init', function() {}) // Bind the listener first
+  .create('#carousel'); // Then init</code></pre>
+
+              <h3>destroy</h3>
+              <p>
+                Event fired at the beginning of destruction of the instance. The
+                handler should be added beforehand.
+              </p>
+              <pre><code class="javascript"><!--
+-->Kineto
+  .on('#carousel', 'destroy', function() {})
+  .create('#carousel');</code></pre>
+
+              <h3>change</h3>
+              <ul>
+                <li>
+                  <code class="hljs-comment">@param</code> nextIndex
+                  <code>number</code> &mdash; The index of slide that we are
+                  moving towards.
+                </li>
+                <li>
+                  <code class="hljs-comment">@param</code> currentIndex
+                  <code>number</code> &mdash; The index of currently active
+                  slide before moving.
+                </li>
+              </ul>
+              <p>
+                Event fired <strong>before moving</strong> to another slide.
+              </p>
+              <pre><code class="javascript"><!--
+-->Kineto.on('#carousel', 'change', function(nextIndex, currentIndex) {});</code></pre>
+
+              <h3>changed</h3>
+              <ul>
+                <li>
+                  <code class="hljs-comment">@param</code> currentIndex
+                  <code>number</code> &mdash; The index of currently active
+                  slide after moving.
+                </li>
+                <li>
+                  <code class="hljs-comment">@param</code> previousIndex
+                  <code>number</code> &mdash; The index of previously active
+                  slide.
+                </li>
+              </ul>
+              <p>Event fired <strong>after moving</strong> to another slide.</p>
+              <pre><code class="javascript"><!--
+-->Kineto.on('#carousel', 'change', function(currentIndex, previousIndex) {});</code></pre>
+            </section>
+
+            <section class="section" id="FAQ">
+              <h2>FAQ</h2>
+              <div class="tip">
+                Was this helpful to you? If you're experiencing a different
+                issue, feel free to open a thread on
+                <a
+                  href="https://github.com/findawayer/kineto/issues"
+                  rel="external noopener noreferrer"
+                  >GitHub issues</a
+                >.
+              </div>
+              <div
+                class="faq-list"
+                data-skeletabs='{ "breakpoint": 1e10, "history": false, "slidingAccordion": true, "transitionDuration": 300 }'
+                data-skeletabs-class="faq"
+              >
+                <ul class="faq-tab-group">
+                  <li class="faq-tab-item">
+                    <button class="faq-tab">
+                      Why is it named Kineto?
+                      <svg
+                        class="mui-icon mui-icon-md"
+                        focusable="false"
+                        viewBox="0 0 24 24"
+                        aria-hidden="true"
+                      >
+                        <path
+                          d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"
+                        ></path>
+                      </svg>
+                    </button>
+                  </li>
+                  <li class="faq-tab-item">
+                    <button class="faq-tab">
+                      The layout looks broken inside a modal.
+                      <svg
+                        class="mui-icon mui-icon-md"
+                        focusable="false"
+                        viewBox="0 0 24 24"
+                        aria-hidden="true"
+                      >
+                        <path
+                          d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"
+                        ></path>
+                      </svg>
+                    </button>
+                  </li>
+                </ul>
+                <div class="faq-panel-group">
+                  <div class="faq-panel">
+                    <p>
+                      The name "Kineto" comes from the word
+                      <a
+                        href="https://en.wikipedia.org/wiki/Kinetoscope"
+                        rel="external noopener"
+                        >kinetoscope</a
+                      >. We find a carousel's behavior similar to that of a
+                      kinetoscope; showing a fraction of the content while
+                      having more to discover behind the frame.
+                    </p>
+                    <p>
+                      The inner container of a "Kineto" instance determining
+                      which sequence should be shown is called "scope".
+                    </p>
+                  </div>
+                  <div class="faq-panel">
+                    <p>
+                      The most common reason of broken layouts comes from a
+                      hidden ancestor element. Kineto requires the container
+                      element to be <strong>visible</strong> at the moment of
+                      initialization, to be able to measure the size of elements
+                      that make up the carousel.
+                    </p>
+                    <p>
+                      You can solve the issue either by calling
+                      <code>Kineto.reload()</code> or lazy-init Kineto when the
+                      parent element gets visible.
+                    </p>
+                    <pre><code class="javascript"><!--
+-->// Example 1. Force-refresh Kineto on demand
+modal.on('open', function() {
+  Kineto.reload('.carousel-inside-modal');
+});</code></pre>
+                    <pre><code class="javascript"><!--
+-->// Example 2. Init Kineto on demand
+modal.on('open', function() {
+  Kineto.create('.carousel-inside-modal');
+});</code></pre>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.min.js"
+      integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./assets/kineto/kineto.js"></script>
+    <script src="./assets/skeletabs/skeletabs.js"></script>
+    <script src="./assets/script.js"></script>
+  </body>
+</html>

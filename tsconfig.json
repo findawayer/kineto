@@ -1,0 +1,30 @@
+{
+  "compilerOptions": {
+    "allowJs": true,
+    "lib": ["dom"],
+    "module": "esnext",
+    "moduleResolution": "node",
+    "outDir": "dist",
+    "target": "es5",
+    "declaration": false,
+    "allowSyntheticDefaultImports": true,
+    "noImplicitAny": true,
+    "strictBindCallApply": true,
+    "strictFunctionTypes": true,
+    "skipLibCheck": true,
+    "suppressImplicitAnyIndexErrors": true,
+    "baseUrl": "src",
+    "paths": {
+      "api/*": ["api/*"],
+      "components/*": ["components/*"],
+      "core/*": ["core/*"],
+      "helpers/*": ["helpers/*"],
+      "polyfills/*": ["polyfills/*"],
+      "store/*": ["store/*"],
+      "styles/*": ["styles/*"],
+      "typings/*": ["typings/*"]
+    }
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules"]
+}

@@ -1,0 +1,6 @@
+.git
+.idea
+.vscode
+node_modules
+test
+*.log

@@ -1,0 +1,4 @@
+# :smiley:
+node_modules
+# Don't touch the compiled version
+dist

@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Test | Kineto</title>
+    <link rel="icon" href="data:;base64,iVBORwOKGO=" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="content">
+      <h2>Basic</h2>
+      <div class="carousel">
+        <div class="slide">
+          <span class="count">1</span>
+        </div>
+        <div class="slide">
+          <span class="count">2</span>
+        </div>
+        <div class="slide">
+          <span class="count">3</span>
+        </div>
+        <div class="slide">
+          <span class="count">4</span>
+        </div>
+        <div class="slide">
+          <span class="count">5</span>
+        </div>
+      </div>
+
+      <h2>Number of visible slides</h2>
+      <div id="perView" class="carousel">
+        <div class="slide">
+          <span class="count">1</span>
+        </div>
+        <div class="slide">
+          <span class="count">2</span>
+        </div>
+        <div class="slide">
+          <span class="count">3</span>
+        </div>
+        <div class="slide">
+          <span class="count">4</span>
+        </div>
+        <div class="slide">
+          <span class="count">5</span>
+        </div>
+      </div>
+
+      <h2>Margin between slides</h2>
+      <div id="margin" class="carousel">
+        <div class="slide">
+          <span class="count">1</span>
+        </div>
+        <div class="slide">
+          <span class="count">2</span>
+        </div>
+        <div class="slide">
+          <span class="count">3</span>
+        </div>
+        <div class="slide">
+          <span class="count">4</span>
+        </div>
+        <div class="slide">
+          <span class="count">5</span>
+        </div>
+      </div>
+
+      <h2>Infinite loop</h2>
+      <div id="loop" class="carousel">
+        <div class="slide">
+          <span class="count">1</span>
+        </div>
+        <div class="slide">
+          <span class="count">2</span>
+        </div>
+        <div class="slide">
+          <span class="count">3</span>
+        </div>
+        <div class="slide">
+          <span class="count">4</span>
+        </div>
+        <div class="slide">
+          <span class="count">5</span>
+        </div>
+      </div>
+
+      <h2>Vertical direction</h2>
+      <div id="vertical" class="carousel">
+        <div class="slide">
+          <span class="count">1</span>
+        </div>
+        <div class="slide">
+          <span class="count">2</span>
+        </div>
+        <div class="slide">
+          <span class="count">3</span>
+        </div>
+        <div class="slide">
+          <span class="count">4</span>
+        </div>
+        <div class="slide">
+          <span class="count">5</span>
+        </div>
+      </div>
+
+      <h2>Adaptive Height</h2>
+      <div id="adaptiveHeight" class="carousel">
+        <div class="slide">
+          <span class="count">1</span>
+        </div>
+        <div class="slide" style="height: 400px">
+          <span class="count">2</span>
+        </div>
+        <div class="slide" style="height: 200px">
+          <span class="count">3</span>
+        </div>
+        <div class="slide" style="height: 250px">
+          <span class="count">4</span>
+        </div>
+        <div class="slide" style="height: 350px">
+          <span class="count">5</span>
+        </div>
+      </div>
+
+      <h2>Equal Height</h2>
+      <div id="equalHeight" class="carousel">
+        <div class="slide">
+          <span class="count">1</span>
+        </div>
+        <div class="slide" style="height: 400px">
+          <span class="count">2</span>
+        </div>
+        <div class="slide" style="height: 200px">
+          <span class="count">3</span>
+        </div>
+        <div class="slide" style="height: 250px">
+          <span class="count">4</span>
+        </div>
+        <div class="slide" style="height: 350px">
+          <span class="count">5</span>
+        </div>
+      </div>
+
+      <h2>Move by 2</h2>
+      <div id="moveBy" class="carousel">
+        <div class="slide">
+          <span class="count">1</span>
+        </div>
+        <div class="slide">
+          <span class="count">2</span>
+        </div>
+        <div class="slide">
+          <span class="count">3</span>
+        </div>
+        <div class="slide">
+          <span class="count">4</span>
+        </div>
+        <div class="slide">
+          <span class="count">5</span>
+        </div>
+      </div>
+
+      <h2>Move over 1s</h2>
+      <div id="speed" class="carousel">
+        <div class="slide">
+          <span class="count">1</span>
+        </div>
+        <div class="slide">
+          <span class="count">2</span>
+        </div>
+        <div class="slide">
+          <span class="count">3</span>
+        </div>
+        <div class="slide">
+          <span class="count">4</span>
+        </div>
+        <div class="slide">
+          <span class="count">5</span>
+        </div>
+      </div>
+
+      <h2>Easing preset</h2>
+      <div id="easingPreset" class="carousel">
+        <div class="slide">
+          <span class="count">1</span>
+        </div>
+        <div class="slide">
+          <span class="count">2</span>
+        </div>
+        <div class="slide">
+          <span class="count">3</span>
+        </div>
+        <div class="slide">
+          <span class="count">4</span>
+        </div>
+        <div class="slide">
+          <span class="count">5</span>
+        </div>
+      </div>
+
+      <h2>Custom easing</h2>
+      <div id="customEasing" class="carousel">
+        <div class="slide">
+          <span class="count">1</span>
+        </div>
+        <div class="slide">
+          <span class="count">2</span>
+        </div>
+        <div class="slide">
+          <span class="count">3</span>
+        </div>
+        <div class="slide">
+          <span class="count">4</span>
+        </div>
+        <div class="slide">
+          <span class="count">5</span>
+        </div>
+      </div>
+
+      <h2>Wait animation</h2>
+      <div id="waitAnimation" class="carousel">
+        <div class="slide">
+          <span class="count">1</span>
+        </div>
+        <div class="slide">
+          <span class="count">2</span>
+        </div>
+        <div class="slide">
+          <span class="count">3</span>
+        </div>
+        <div class="slide">
+          <span class="count">4</span>
+        </div>
+        <div class="slide">
+          <span class="count">5</span>
+        </div>
+      </div>
+
+      <h2>Move to a slide by clicking</h2>
+      <div id="moveOnClick" class="carousel">
+        <div class="slide">
+          <span class="count">1</span>
+        </div>
+        <div class="slide">
+          <span class="count">2</span>
+        </div>
+        <div class="slide">
+          <span class="count">3</span>
+        </div>
+        <div class="slide">
+          <span class="count">4</span>
+        </div>
+        <div class="slide">
+          <span class="count">5</span>
+        </div>
+      </div>
+
+      <h2>Auto playing</h2>
+      <div id="stream" class="carousel">
+        <div class="slide">
+          <span class="count">1</span>
+        </div>
+        <div class="slide">
+          <span class="count">2</span>
+        </div>
+        <div class="slide">
+          <span class="count">3</span>
+        </div>
+        <div class="slide">
+          <span class="count">4</span>
+        </div>
+        <div class="slide">
+          <span class="count">5</span>
+        </div>
+      </div>
+
+      <h2>Auto play every 1s</h2>
+      <div id="streamEverySecond" class="carousel">
+        <div class="slide">
+          <span class="count">1</span>
+        </div>
+        <div class="slide">
+          <span class="count">2</span>
+        </div>
+        <div class="slide">
+          <span class="count">3</span>
+        </div>
+        <div class="slide">
+          <span class="count">4</span>
+        </div>
+        <div class="slide">
+          <span class="count">5</span>
+        </div>
+      </div>
+
+      <h2>Pause on hovering, not on focusing</h2>
+      <div id="pauseOnHover" class="carousel">
+        <div class="slide">
+          <span class="count">1</span>
+        </div>
+        <div class="slide">
+          <span class="count">2</span>
+        </div>
+        <div class="slide">
+          <span class="count">3</span>
+        </div>
+        <div class="slide">
+          <span class="count">4</span>
+        </div>
+        <div class="slide">
+          <span class="count">5</span>
+        </div>
+      </div>
+
+      <h2>Navigation components</h2>
+      <div id="navigation" class="carousel">
+        <div class="slide">
+          <span class="count">1</span>
+        </div>
+        <div class="slide">
+          <span class="count">2</span>
+        </div>
+        <div class="slide">
+          <span class="count">3</span>
+        </div>
+        <div class="slide">
+          <span class="count">4</span>
+        </div>
+        <div class="slide">
+          <span class="count">5</span>
+        </div>
+      </div>
+
+      <h2>Swipe disabled</h2>
+      <div id="noSwipe" class="carousel">
+        <div class="slide">
+          <span class="count">1</span>
+        </div>
+        <div class="slide">
+          <span class="count">2</span>
+        </div>
+        <div class="slide">
+          <span class="count">3</span>
+        </div>
+        <div class="slide">
+          <span class="count">4</span>
+        </div>
+        <div class="slide">
+          <span class="count">5</span>
+        </div>
+      </div>
+
+      <h2>Swipe threshold</h2>
+      <div id="swipeThreshold" class="carousel">
+        <div class="slide">
+          <span class="count">1</span>
+        </div>
+        <div class="slide">
+          <span class="count">2</span>
+        </div>
+        <div class="slide">
+          <span class="count">3</span>
+        </div>
+        <div class="slide">
+          <span class="count">4</span>
+        </div>
+        <div class="slide">
+          <span class="count">5</span>
+        </div>
+      </div>
+
+      <h2>No bouncing effect on edges</h2>
+      <div id="noEdgeBounce" class="carousel">
+        <div class="slide">
+          <span class="count">1</span>
+        </div>
+        <div class="slide">
+          <span class="count">2</span>
+        </div>
+        <div class="slide">
+          <span class="count">3</span>
+        </div>
+        <div class="slide">
+          <span class="count">4</span>
+        </div>
+        <div class="slide">
+          <span class="count">5</span>
+        </div>
+      </div>
+
+      <h2>Reduced friction on edges</h2>
+      <div id="smallEdgeFriction" class="carousel">
+        <div class="slide">
+          <span class="count">1</span>
+        </div>
+        <div class="slide">
+          <span class="count">2</span>
+        </div>
+        <div class="slide">
+          <span class="count">3</span>
+        </div>
+        <div class="slide">
+          <span class="count">4</span>
+        </div>
+        <div class="slide">
+          <span class="count">5</span>
+        </div>
+      </div>
+
+      <h2>Mouse wheel</h2>
+      <div id="wheel" class="carousel">
+        <div class="slide">
+          <span class="count">1</span>
+        </div>
+        <div class="slide">
+          <span class="count">2</span>
+        </div>
+        <div class="slide">
+          <span class="count">3</span>
+        </div>
+        <div class="slide">
+          <span class="count">4</span>
+        </div>
+        <div class="slide">
+          <span class="count">5</span>
+        </div>
+      </div>
+
+      <h2>Mouse wheel no more than once a second</h2>
+      <div id="wheelThrottle" class="carousel">
+        <div class="slide">
+          <span class="count">1</span>
+        </div>
+        <div class="slide">
+          <span class="count">2</span>
+        </div>
+        <div class="slide">
+          <span class="count">3</span>
+        </div>
+        <div class="slide">
+          <span class="count">4</span>
+        </div>
+        <div class="slide">
+          <span class="count">5</span>
+        </div>
+      </div>
+
+      <h2>Scroll not released on edges</h2>
+      <div id="wheelNoEdges" class="carousel">
+        <div class="slide">
+          <span class="count">1</span>
+        </div>
+        <div class="slide">
+          <span class="count">2</span>
+        </div>
+        <div class="slide">
+          <span class="count">3</span>
+        </div>
+        <div class="slide">
+          <span class="count">4</span>
+        </div>
+        <div class="slide">
+          <span class="count">5</span>
+        </div>
+      </div>
+
+      <h2>No aria attributes</h2>
+      <div id="noAria" class="carousel">
+        <div class="slide">
+          <span class="count">1</span>
+        </div>
+        <div class="slide">
+          <span class="count">2</span>
+        </div>
+        <div class="slide">
+          <span class="count">3</span>
+        </div>
+        <div class="slide">
+          <span class="count">4</span>
+        </div>
+        <div class="slide">
+          <span class="count">5</span>
+        </div>
+      </div>
+
+      <h2>Pixel perfect CSS</h2>
+      <div id="pixelPerfect" class="carousel">
+        <div class="slide">
+          <span class="count">1</span>
+        </div>
+        <div class="slide">
+          <span class="count">2</span>
+        </div>
+        <div class="slide">
+          <span class="count">3</span>
+        </div>
+        <div class="slide">
+          <span class="count">4</span>
+        </div>
+        <div class="slide">
+          <span class="count">5</span>
+        </div>
+      </div>
+
+      <h2>Use percentage values in CSS</h2>
+      <div id="usePercent" class="carousel">
+        <div class="slide">
+          <span class="count">1</span>
+        </div>
+        <div class="slide">
+          <span class="count">2</span>
+        </div>
+        <div class="slide">
+          <span class="count">3</span>
+        </div>
+        <div class="slide">
+          <span class="count">4</span>
+        </div>
+        <div class="slide">
+          <span class="count">5</span>
+        </div>
+      </div>
+
+      <h2>Responsive</h2>
+      <div id="responsive" class="carousel">
+        <div class="slide">
+          <span class="count">1</span>
+        </div>
+        <div class="slide">
+          <span class="count">2</span>
+        </div>
+        <div class="slide">
+          <span class="count">3</span>
+        </div>
+        <div class="slide">
+          <span class="count">4</span>
+        </div>
+        <div class="slide">
+          <span class="count">5</span>
+        </div>
+      </div>
+
+      <h2>Responsive: desktop first</h2>
+      <div id="desktopFirst" class="carousel">
+        <div class="slide">
+          <span class="count">1</span>
+        </div>
+        <div class="slide">
+          <span class="count">2</span>
+        </div>
+        <div class="slide">
+          <span class="count">3</span>
+        </div>
+        <div class="slide">
+          <span class="count">4</span>
+        </div>
+        <div class="slide">
+          <span class="count">5</span>
+        </div>
+      </div>
+
+      <h2>Sync between instances</h2>
+      <div id="sync1" class="carousel">
+        <div class="slide">
+          <span class="count">1</span>
+        </div>
+        <div class="slide">
+          <span class="count">2</span>
+        </div>
+        <div class="slide">
+          <span class="count">3</span>
+        </div>
+        <div class="slide">
+          <span class="count">4</span>
+        </div>
+        <div class="slide">
+          <span class="count">5</span>
+        </div>
+        <div class="slide">
+          <span class="count">6</span>
+        </div>
+        <div class="slide">
+          <span class="count">7</span>
+        </div>
+        <div class="slide">
+          <span class="count">8</span>
+        </div>
+        <div class="slide">
+          <span class="count">9</span>
+        </div>
+      </div>
+      <div id="sync2" class="carousel">
+        <div class="slide">
+          <span class="count">1</span>
+        </div>
+        <div class="slide">
+          <span class="count">2</span>
+        </div>
+        <div class="slide">
+          <span class="count">3</span>
+        </div>
+        <div class="slide">
+          <span class="count">4</span>
+        </div>
+        <div class="slide">
+          <span class="count">5</span>
+        </div>
+        <div class="slide">
+          <span class="count">6</span>
+        </div>
+        <div class="slide">
+          <span class="count">7</span>
+        </div>
+        <div class="slide">
+          <span class="count">8</span>
+        </div>
+        <div class="slide">
+          <span class="count">9</span>
+        </div>
+      </div>
+      <div id="sync3" class="carousel">
+        <div class="slide">
+          <span class="count">1</span>
+        </div>
+        <div class="slide">
+          <span class="count">2</span>
+        </div>
+        <div class="slide">
+          <span class="count">3</span>
+        </div>
+        <div class="slide">
+          <span class="count">4</span>
+        </div>
+        <div class="slide">
+          <span class="count">5</span>
+        </div>
+        <div class="slide">
+          <span class="count">6</span>
+        </div>
+        <div class="slide">
+          <span class="count">7</span>
+        </div>
+        <div class="slide">
+          <span class="count">8</span>
+        </div>
+        <div class="slide">
+          <span class="count">9</span>
+        </div>
+      </div>
+
+      <script src="./kineto.js"></script>
+      <script src="./script.js"></script>
+    </div>
+  </body>
+</html>
